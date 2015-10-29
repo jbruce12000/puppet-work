@@ -39,7 +39,7 @@ package {
     location => 'http://downloads.hipchat.com/linux/apt',
     release  => 'stable',
     repos    => 'main',
-    key      => {
+    key      => { 'hipchat':
       'source' => 'https://www.hipchat.com/keys/hipchat-linux.key',
     },
     include  => {
