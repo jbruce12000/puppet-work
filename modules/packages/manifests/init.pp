@@ -33,14 +33,15 @@ package {
     ]:
   }
 
-  apt::key { 'hipchat':
-    key_source => 'https://www.hipchat.com/keys/hipchat-linux.key',
-    }
-
   apt::source { 'hipchat':
     location => 'http://downloads.hipchat.com/linux/apt',
     release  => 'stable',
     repos    => 'main',
+    key => {
+      # apt-key list to get key id
+      id     => '729B5780',
+      source => 'https://www.hipchat.com/keys/hipchat-linux.key'
+      },
     include  => {
       'src' => true,
       'deb' => true,
