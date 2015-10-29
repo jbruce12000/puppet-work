@@ -48,7 +48,7 @@ package {
     },
   }
 
-  package { 'hipchat',
+  package { 'hipchat':
     require => Apt::Source['hipchat']
   }
 }
