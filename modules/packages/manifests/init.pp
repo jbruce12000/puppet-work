@@ -33,8 +33,8 @@ package {
     ]:
   }
 
-  apt::key { 'AAAAAAAA':
-    source => 'https://www.hipchat.com/keys/hipchat-linux.key',
+  apt::key { 'hipchat':
+    key_source => 'https://www.hipchat.com/keys/hipchat-linux.key',
     }
 
   apt::source { 'hipchat':
@@ -46,8 +46,6 @@ package {
       'deb' => true,
       }
     }
-
-
 
   package { 'hipchat':
     require => Apt::Source['hipchat']
