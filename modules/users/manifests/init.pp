@@ -34,6 +34,14 @@ class users {
     source  => 'puppet:///modules/users/bashrc',
     }
 
+  # has the proper hosts entry of "files dns" 
+  file { '/etc/nsswitch.conf':
+    ensure  => present,
+    source  => 'puppet:///modules/users/nsswitch.conf',
+    owner   => "root",
+    group   => "root",
+    mode    => 644,
+    }
   }
 
 # to get the passwd for puppet
