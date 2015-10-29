@@ -1,8 +1,6 @@
 class packages {
 include apt
 
-# basics
-
 package {
     [ 'awscli',
       'ack-grep',
@@ -35,18 +33,21 @@ package {
     ]:
   }
 
+  apt::key { 'hipchat':
+    source => 'https://www.hipchat.com/keys/hipchat-linux.key',
+    }
+
   apt::source { 'hipchat':
     location => 'http://downloads.hipchat.com/linux/apt',
     release  => 'stable',
     repos    => 'main',
-    key      => { id => 'hipchat',
-      'source' => 'https://www.hipchat.com/keys/hipchat-linux.key',
-    },
     include  => {
       'src' => true,
       'deb' => true,
-    },
-  }
+      }
+    }
+
+
 
   package { 'hipchat':
     require => Apt::Source['hipchat']
