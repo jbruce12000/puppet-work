@@ -13,6 +13,11 @@ class users {
     target => '/home/jbruce/Dropbox/work/bin',
     }
 
+  file { '/home/jbruce/notes':
+    ensure => link,
+    target => '/home/jbruce/Dropbox/work/manheim/notes',
+    }
+
   file { '/home/jbruce/tmp':
     ensure => directory,
     }
