@@ -25,6 +25,7 @@ package {
       'tmux',
       'tofrodos',
       'tig',
+      'traceroute',
       'ubuntu-restricted-extras',
       'virtualbox-nonfree',
       'vim',
