@@ -4,8 +4,8 @@ class users {
     ensure   => present,
     home     => '/home/jbruce',
     shell    => '/bin/bash',
-    groups   => ['adm','cdrom', 'sudo','dip','plugdev',
-                 'lpadmin','vboxusers'],
+    groups   => ['adm','sudo','dip','plugdev',
+                 'lpadmin'],
     }
 
   file { '/home/jbruce/bin':
@@ -26,5 +26,3 @@ class users {
 
 # to get the passwd for puppet
 # openssl passwd -1
-
-
