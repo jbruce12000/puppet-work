@@ -20,7 +20,6 @@ class users {
   file { '/home/jbruce/.bashrc':
     ensure  => present,
     source  => 'puppet:///modules/users/bashrc',
-    require => Package['samba'],
     }
 
   }
