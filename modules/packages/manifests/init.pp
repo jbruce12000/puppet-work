@@ -33,7 +33,7 @@ package {
     ]:
   }
 
-  apt::key { 'hipchat':
+  apt::key { 'AAAAAAAA':
     source => 'https://www.hipchat.com/keys/hipchat-linux.key',
     }
 
