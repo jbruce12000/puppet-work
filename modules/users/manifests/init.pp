@@ -8,6 +8,13 @@ class users {
                  'lpadmin'],
     }
 
+  File {
+    ensure => "present",
+    owner  => "jbruce",
+    group  => "jbruce",
+    mode   => 644,
+    }
+
   file { '/home/jbruce/bin':
     ensure => link,
     target => '/home/jbruce/Dropbox/work/bin',
