@@ -7,6 +7,7 @@ package {
       'build-essential',
       'checkinstall',
       'curl',
+      'conky',
       'dropbox',
       'etherape',
       'evolution',

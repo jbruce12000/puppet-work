@@ -15,6 +15,11 @@ class users {
     mode   => 644,
     }
 
+  file { '/home/jbruce/.conkyrc':
+    ensure => link,
+    target => '/home/jbruce/Dropbox/home/bin/conkyrc',
+    }
+
   file { '/home/jbruce/bin':
     ensure => link,
     target => '/home/jbruce/Dropbox/work/bin',
