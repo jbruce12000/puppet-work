@@ -15,6 +15,17 @@ class users {
     mode   => 644,
     }
 
+  file { '/home/jbruce/.config/disper':
+    ensure => directory,
+    mode => 755,
+    }
+
+  file { '/home/jbruce/.config/disper/config':
+    ensure  => present,
+    source  => 'puppet:///modules/users/disper.config',
+    require => File['/home/jbruce/.config/disper']
+    }
+
   file { '/home/jbruce/.conkyrc':
     ensure => link,
     target => '/home/jbruce/Dropbox/home/bin/conkyrc',
