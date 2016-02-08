@@ -8,6 +8,7 @@ package {
       'checkinstall',
       'curl',
       'conky',
+      'disper',
       'dropbox',
       'etherape',
       'evolution',
