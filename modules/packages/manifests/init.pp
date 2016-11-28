@@ -4,6 +4,8 @@ include apt
 package {
     [ 'awscli',
       'ack-grep',
+      'bogofilter-common',
+      'bogofilter-sqlite',
       'build-essential',
       'checkinstall',
       'curl',
@@ -23,7 +25,6 @@ package {
       'openssh-server',
       'pdftk',
       'password-gorilla',
-      'spamassassin',
       'tar',
       'tmux',
       'tofrodos',
