@@ -25,6 +25,7 @@ package {
       'openssh-server',
       'pdftk',
       'password-gorilla',
+      'slack-desktop',
       'tar',
       'tmux',
       'tofrodos',
