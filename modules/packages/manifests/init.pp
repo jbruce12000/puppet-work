@@ -20,6 +20,7 @@ package {
       'inkscape',
       'keepassx',
       'libxml2-utils',
+      'meld',
       'mumble',
       'nmap',
       'openssh-server',
