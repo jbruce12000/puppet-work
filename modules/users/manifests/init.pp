@@ -25,10 +25,10 @@ class users {
     source  => 'puppet:///modules/users/disper.config',
     require => File['/home/jbruce/.config/disper']
     }
-
+  
   file { '/home/jbruce/.conkyrc':
-    ensure => link,
-    target => '/home/jbruce/Dropbox/home/bin/conkyrc',
+    ensure  => present,
+    source  => 'puppet:///modules/users/conkyrc',
     }
 
   file { '/home/jbruce/bin':
