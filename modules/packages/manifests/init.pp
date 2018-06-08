@@ -21,7 +21,6 @@ package {
       'keepassx',
       'libxml2-utils',
       'meld',
-      'mumble',
       'nmap',
       'openssh-server',
       'pdftk',
