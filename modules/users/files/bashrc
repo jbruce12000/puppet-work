@@ -1,2 +1,7 @@
 set -o vi
 export EDITOR=vi
+HISTSIZE=10000
+
+alias xclip="xclip -selection c"
+export VAULT_ADDR=https://re-tooling-vault-us-east-1.aws-uat.manheim.com:443
+eval $(vault-aws-creds.py -w)
