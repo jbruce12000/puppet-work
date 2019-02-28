@@ -36,6 +36,7 @@ package {
       'vim',
       'xclip',
       'xchat',
+      'xtightvncviewer',
     ]:
   }
 }
