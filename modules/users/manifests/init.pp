@@ -58,6 +58,16 @@ class users {
     group   => "root",
     mode    => 644,
     }
+
+  # prevent laptop being closed from shutting of my monitor
+  file { '/etc/systemd/logind.conf':
+    ensure  => present,
+    source  => 'puppet:///modules/users/logind.conf',
+    owner   => "root",
+    group   => "root",
+    mode    => 644,
+    }
+
   }
 
 # to get the passwd for puppet
