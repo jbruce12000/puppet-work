@@ -1,4 +1,4 @@
-## puppet-home
+## puppet-work
 
 use puppet to install my linux mint 18.1 laptop for work
 
