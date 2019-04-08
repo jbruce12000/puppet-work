@@ -19,6 +19,7 @@ package {
       'evolution-ews',
       'fdupes',
       'findutils',
+      'html2text',
       'inkscape',
       'keepassx',
       'libxml2-utils',
