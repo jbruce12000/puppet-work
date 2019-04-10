@@ -21,6 +21,7 @@ package {
       'findutils',
       'html2text',
       'inkscape',
+      'jq',
       'keepassx',
       'libxml2-utils',
       'meld',
