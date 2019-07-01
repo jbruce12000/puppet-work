@@ -68,6 +68,15 @@ class users {
     mode    => 644,
     }
 
+  # prevent laptop being closed from locking my screen
+  file { '/etc/UPower/UPower.conf':
+    ensure  => present,
+    source  => 'puppet:///modules/users/UPower.conf',
+    owner   => "root",
+    group   => "root",
+    mode    => 644,
+    }
+
   }
 
 # to get the passwd for puppet
