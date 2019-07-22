@@ -77,6 +77,13 @@ class users {
     mode    => 644,
     }
 
+  # run automated updates at 21 minutes past every hour
+  cron { "autoupdate":
+    command => "sudo apt-get update >>/var/log/update.log; sudo apt-get -y dist-upgrade >>/var/log/update.log; sudo apt-get -y autoremove >>/var/log/update.log; echo '--------------------------------------------------------------------------------' >> /var/log/update.log",
+    user    => "root",
+    minute  => 21
+    }
+
   }
 
 # to get the passwd for puppet
