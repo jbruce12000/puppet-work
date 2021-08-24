@@ -14,6 +14,11 @@ class users {
     group  => "jbruce",
     mode   => "644",
     }
+
+  file { '/usr/bin/python':
+    ensure => link,
+    target => '/usr/bin/python3',
+    }
   
   file { '/home/jbruce/.conkyrc':
     ensure  => present,

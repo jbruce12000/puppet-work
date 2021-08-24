@@ -35,6 +35,7 @@ package {
       'traceroute',
       'ubuntu-restricted-extras',
       'vim',
+      'virtualenv',
       'xchat',
       'xtightvncviewer',
       'xfce4-clipman-plugin',
