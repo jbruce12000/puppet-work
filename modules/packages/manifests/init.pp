@@ -10,9 +10,6 @@ package {
       'checkinstall',
       'curl',
       'conky',
-      'disper',
-      'docker.io',
-      'docker-compose',
       'dropbox',
       'etherape',
       'evolution',
@@ -38,9 +35,9 @@ package {
       'traceroute',
       'ubuntu-restricted-extras',
       'vim',
-      'clipman',
       'xchat',
       'xtightvncviewer',
+      'xfce4-clipman-plugin',
     ]:
   }
 }

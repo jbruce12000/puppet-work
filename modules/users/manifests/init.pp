@@ -12,18 +12,7 @@ class users {
     ensure => "present",
     owner  => "jbruce",
     group  => "jbruce",
-    mode   => 644,
-    }
-
-  file { '/home/jbruce/.config/disper':
-    ensure => directory,
-    mode => 755,
-    }
-
-  file { '/home/jbruce/.config/disper/config':
-    ensure  => present,
-    source  => 'puppet:///modules/users/disper.config',
-    require => File['/home/jbruce/.config/disper']
+    mode   => "644",
     }
   
   file { '/home/jbruce/.conkyrc':
@@ -56,25 +45,7 @@ class users {
     source  => 'puppet:///modules/users/nsswitch.conf',
     owner   => "root",
     group   => "root",
-    mode    => 644,
-    }
-
-  # prevent laptop being closed from shutting of my monitor
-  file { '/etc/systemd/logind.conf':
-    ensure  => present,
-    source  => 'puppet:///modules/users/logind.conf',
-    owner   => "root",
-    group   => "root",
-    mode    => 644,
-    }
-
-  # prevent laptop being closed from locking my screen
-  file { '/etc/UPower/UPower.conf':
-    ensure  => present,
-    source  => 'puppet:///modules/users/UPower.conf',
-    owner   => "root",
-    group   => "root",
-    mode    => 644,
+    mode    => "644",
     }
 
   # run automated updates at 21 minutes past every hour
