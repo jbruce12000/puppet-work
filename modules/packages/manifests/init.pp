@@ -21,6 +21,7 @@ package {
       'jq',
       'keepassx',
       'libxml2-utils',
+      'libjson-pp-perl',
       'meld',
       'nmap',
       'openconnect',
