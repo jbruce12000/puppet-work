@@ -26,4 +26,4 @@ if [ ! -x /usr/bin/add-apt-repository ]; then
 fi
 
 # run puppet
-puppet apply /etc/puppet/manifests/site.pp
+puppet apply /etc/puppet/manifests/site.pp --modulepath "/etc/puppet/code/modules:/usr/share/puppet/modules:/etc/puppet/modules"
