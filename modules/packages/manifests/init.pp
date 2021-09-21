@@ -38,6 +38,7 @@ package {
       'vim',
       'virtualenv',
       'xchat',
+      'xclip',
       'xtightvncviewer',
       'xfce4-clipman-plugin',
     ]:
