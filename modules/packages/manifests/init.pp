@@ -16,6 +16,7 @@ package {
       'evolution-ews',
       'fdupes',
       'findutils',
+      'gparted',
       'html2text',
       'inkscape',
       'jq',
