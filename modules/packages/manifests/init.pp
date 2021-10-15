@@ -28,6 +28,7 @@ package {
       'openconnect',
       'openssh-server',
       'password-gorilla',
+      'perldoc',
       'pianobar',
       'python-lxml',
       'tar',
