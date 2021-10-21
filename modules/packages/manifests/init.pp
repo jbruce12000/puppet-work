@@ -21,6 +21,7 @@ package {
       'inkscape',
       'jq',
       'keepassx',
+      'libdatetime-perl',
       'libxml2-utils',
       'libjson-pp-perl',
       'meld',
