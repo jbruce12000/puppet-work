@@ -29,6 +29,8 @@ package {
       'pianobar',
       'python-lxml',
       'sqlite3',
+      'spice-vdagent',
+      'spice-webdavd',
       'tar',
       'tmux',
       'tofrodos',
